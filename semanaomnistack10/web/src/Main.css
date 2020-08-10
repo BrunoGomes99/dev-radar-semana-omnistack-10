@@ -1,0 +1,20 @@
+main {
+    flex: 1; /* O main vai ocupar todo o espaço do flex-direction: row disponível pra si mesmo */
+}
+
+main ul {
+    display: grid; /* Ajuda a posicionar os itens */
+    grid-template-columns: repeat(2, 1fr); /* O grid terá duas colunas de tamanho 1fr */
+    gap: 20px; /* Distancia linhas e colunas de 20 pixels */
+    list-style: none; /* Tira as bolinhas em forma de tópico dos intens da lista */
+}
+
+@media (max-width: 650px) {
+    main ul {
+        grid-template-columns: 1fr; /* Quando a tela for menor ou igual a 650px, a lista ocupará apenas 1 coluna do grid. Dessa forma, os itens ficarão um abaixo do outro */
+    }
+
+  /*  li.dev-item {
+        width: 100%;
+    } */
+}

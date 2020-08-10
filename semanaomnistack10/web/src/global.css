@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+/* O import acima foi gerado ao selecionar a fonte no google fonts */
+
+*{
+    /* O asterisco indica que isso será feito para todos os elementos. Isso reseta alguns estilos padrão do html */
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+/* Os dois blocos acima são para resetar as configurações padrão utilizadas no html */
+
+body {
+    background: #E5E6F0;
+    -webkit-font-smoothing: antialiased; /* Deixa a fonte mais legível */
+}
+
+body, input, button {
+    font-family: Roboto, sans-serif;
+}

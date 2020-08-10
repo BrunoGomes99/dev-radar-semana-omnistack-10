@@ -1,0 +1,29 @@
+#app{
+    max-width: 1200px; /* Isso garante que mesmo se a tela do usuário for mt grande, a tela fique centralizada e não esticada */
+    margin: 0 auto; /* A margem auto tbm serve para se ajustar de acordo com a tela do usuário */
+    padding: 60px 30px; /* 60 pixels em cima e em baixo e 30 pixels na direita e esquerda */
+
+    display: flex;
+    flex-direction: row;
+    /* flex e flex-direction row pra que todos os elementos dentro da tag app fiquem lado a lado;*/
+    align-items: flex-start; /* Garante que os elementos fiquem alinhados ao topo, não ocupando a tela toda */
+}
+
+#app main {
+    margin-left: 30px;
+}
+
+@media (max-width: 1000px) { /* O @media é aplicado no momento em que a condição no parêntese é atendida. Nesse caso, quando a tela tiver com uma largura menor ou igual a 1000px */
+    #app {
+        flex-direction: column; /* Os elementos de #app que antes estavam dispositos em linha (row), agora ficam como colunas */
+    }
+
+    #app main {
+        margin-left: 0;       
+        margin-top: 30px; 
+    }
+
+    #app aside {
+        width: 100%;
+    }
+}
