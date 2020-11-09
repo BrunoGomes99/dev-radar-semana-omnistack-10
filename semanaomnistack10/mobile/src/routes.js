@@ -10,7 +10,7 @@ const Routes = createAppContainer( //Cria o App. Usado só uma vez no código
         Main: {
             screen: Main, // O screen especifica qual componente vai ser renderizado
             navigationOptions: { // Permite customizar a tela
-                title: "DevRadar"
+                title: "Find Dev" // Era DevRadar
             },
         },
         Profile: {

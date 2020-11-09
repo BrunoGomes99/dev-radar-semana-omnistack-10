@@ -5,7 +5,7 @@ import { requestPermissionsAsync, getCurrentPositionAsync } from 'expo-location'
 import { MaterialIcons } from '@expo/vector-icons'; // Importa inúmeros pacotes de icones
 
 import api from '../services/api';
-import { connect, dijsconnect, subscribeToNewDevs } from '../services/socket';
+import { connect, disconnect, subscribeToNewDevs } from '../services/socket';
 
 function Main({ navigation }){ // Tudo que vem de createStackNavigator recebe uma propriedade única chamada "navigation"
 
@@ -131,7 +131,7 @@ function Main({ navigation }){ // Tudo que vem de createStackNavigator recebe um
             </MapView>
             <View style={styles.searchForm}>
                 <TextInput style={styles.searchInput}
-                           placeholder="Buscar devs por techs..."
+                           placeholder="Buscar devs por tecnologias"
                            placeholderTextColor="#999"
                            autoCapitalize="words"
                            autoCorrect={false}
